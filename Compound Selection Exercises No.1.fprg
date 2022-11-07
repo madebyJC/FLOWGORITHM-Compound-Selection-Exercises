@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="JANCARLOPAREDES"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-10 10:41:59 pm"/>
+        <attribute name="created" value="SkFOQ0FSTE9QQVJFREVTO0RFU0tUT1AtNzQ1R1ZOMzsyMDIyLTEwLTEwOzEwOjI3OjUxIHBtOzM0NjM="/>
+        <attribute name="edited" value="SkFOQ0FSTE9QQVJFREVTO0RFU0tUT1AtNzQ1R1ZOMzsyMDIyLTEwLTEwOzEwOjQxOjU5IHBtOzE7MzU3NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="firstInput, secondInput, thirdInput" type="Integer" array="False" size=""/>
+            <output expression="&quot;Input the first number here: &quot;" newline="True"/>
+            <input variable="firstInput"/>
+            <output expression="&quot;Input the second number here: &quot;" newline="True"/>
+            <input variable="secondInput"/>
+            <output expression="&quot;Input the third number here: &quot;" newline="True"/>
+            <input variable="thirdInput"/>
+            <if expression="firstInput == secondInput ||&#13;&#10;firstInput == thirdInput ||&#13;&#10;secondInput == thirdInput">
+                <then>
+                    <if expression="firstInput == secondInput &amp;&amp;&#13;&#10;firstInput == thirdInput">
+                        <then>
+                            <output expression="&quot;All numbers are equal&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;A pair number is equal&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;No equal numbers&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

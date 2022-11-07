@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="JANCARLOPAREDES"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-11 11:26:08 pm"/>
+        <attribute name="created" value="SkFOQ0FSTE9QQVJFREVTO0RFU0tUT1AtNzQ1R1ZOMzsyMDIyLTEwLTEwOzEwOjQyOjI1IHBtOzM0NjE="/>
+        <attribute name="edited" value="SkFOQ0FSTE9QQVJFREVTO0RFU0tUT1AtNzQ1R1ZOMzsyMDIyLTEwLTExOzExOjI2OjA4IHBtOzM7MzU3Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="firstVoltage, secondVoltage, totalVoltage" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the first voltage of the LED&quot;" newline="True"/>
+            <input variable="firstVoltage"/>
+            <output expression="&quot;Enter the second voltage of the LED &quot;" newline="True"/>
+            <input variable="secondVoltage"/>
+            <assign variable="totalVoltage" expression="firstVoltage + secondVoltage"/>
+            <if expression="totalVoltage = 5">
+                <then>
+                    <output expression="&quot;Active&quot;" newline="True"/>
+                    <output expression="&quot;LED ON&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="totalVoltage &gt; 5">
+                        <then>
+                            <output expression="&quot;Breakdown&quot;" newline="True"/>
+                            <output expression="&quot;LED OFF&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Cutoff&quot;" newline="True"/>
+                            <output expression="&quot;LED OFF&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
